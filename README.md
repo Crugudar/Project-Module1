@@ -13,22 +13,22 @@ But worry no more!! Just open your web browser and take our quiz!! Each question
 ## Minimum Viable Product
 
 MVP (DOM - CANVAS)
-Homepage: The homepage will present the apps concept and features and provide links to the rest of the site.
-Test: A user will be able to anwser questions that filter the movie cataloge according to her preferences.
-Result: A fine selection of the movies that fits your momentum.
-About Us: Why, how, who, when? Everything you need to know about always wanted to know about ***Netflix and (REALLY) chill*** 
-Signup: A registration form for new users.
-Login: A sign in form for existing users.
+__Homepage: The homepage will present the apps concept and features and provide links to the rest of the site.
+__Test: A user will be able to anwser questions that filter the movie cataloge according to her preferences.
+__Result: A fine selection of the movies that fits your momentum.
+__About Us: Why, how, who, when? Everything you need to know about always wanted to know about ***Netflix and (REALLY) chill*** 
+__Signup: A registration form for new users.
+__Login: A sign in form for existing users.
 
-Backlog
+## Backlog
 Personal page with the movies you've seen. Your own film library.
 Test with animations forEach (pun intended) question.
 Rating sistem inside your film library.
 
-Wireframes
+## Wireframes
 List of pages, and/or link to your sketchs
 
-Data structure
+## Data structure
 - **root/**
      - index.html
      - test.html
@@ -44,10 +44,10 @@ Data structure
           
 
 
-APIs
+## APIs
 The API(s) you are using
 
-Links
+## Links
 Trello (list of tasks)
 https://trello.com/b/6TKGW2Hn/proyecto-1
 
