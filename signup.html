@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Pokémon - Signup</title>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,600" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/burger-menu-icon.css">
+</head>
+
+<body>
+  <header>
+    <nav>
+      <div class="nav-container">
+        <a href="index.html"><img src="" alt="Logo" class="navbar-brand"></a>
+        <div>
+          <div class="burger-menu-icon" >
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+      </div>
+      <ul class="nav-menu hide-menu" id="nav-menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="">Take the quiz</a></li>
+        <li><a href="signup.html" class="selected">Sign Up</a></li>
+        <li><a href="login.html">Log In</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="signup">
+      <h2>Sign Up</h2>
+      <div class="form-wrapper">
+        <form class="signup-form" action="">
+          <input type="text" id="name" placeholder="Name" />
+          
+          <!-- hacemos el input email type text para que no moleste la validación -->
+          <input type="text" id="email" placeholder="Email" />
+          <input type="password" id="password" placeholder="****" />
+          <input type="password" id="repeat-password" placeholder="****" />
+          
+          <!-- El atríbuto `disabled` desactiva el botón. El botón será activado o desactivado por el método `checkButton` en Signup.js -->
+          <button type="submit" class="button" id="signup-button" disabled >Sign Up</button>
+        </form>
+        <div class="message-container">
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="JS/Sign-up.js"></script>
+  <script src="JS/User.js"></script>
+  <script src="JS/Database.js"></script>
+  <script src="JS/Validator.js"></script>
+</body>
+
+</html>
