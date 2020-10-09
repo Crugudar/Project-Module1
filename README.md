@@ -13,17 +13,17 @@ But worry no more!! Just open your web browser and take our quiz!! Each question
 ## Minimum Viable Product
 
 MVP (DOM - CANVAS)
-__Homepage: The homepage will present the apps concept and features and provide links to the rest of the site.
-__Test: A user will be able to anwser questions that filter the movie cataloge according to her preferences.
-__Result: A fine selection of the movies that fits your momentum.
-__About Us: Why, how, who, when? Everything you need to know about always wanted to know about ***Netflix and (REALLY) chill*** 
-__Signup: A registration form for new users.
-__Login: A sign in form for existing users.
+-__Homepage:__ The homepage will present the apps concept and features and provide links to the rest of the site.
+-__Test:__ A user will be able to anwser questions that filter the movie cataloge according to her preferences.
+-__Result:__ A fine selection of the movies that fits your momentum.
+-__About Us:__ Why, how, who, when? Everything you need to know about always wanted to know about ***Netflix and (REALLY) chill*** 
+-__Signup:__ A registration form for new users.
+-__Login:__ A sign in form for existing users.
 
 ## Backlog
-Personal page with the movies you've seen. Your own film library.
-Test with animations forEach (pun intended) question.
-Rating sistem inside your film library.
+- Personal page with the movies you've seen. Your own film library.
+- Test with animations forEach (pun intended) question.
+- Rating sistem inside your film library.
 
 ## Wireframes
 List of pages, and/or link to your sketchs
