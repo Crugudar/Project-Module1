@@ -46,6 +46,7 @@ List of pages, and/or link to your sketchs
 
 ## APIs
 The API(s) you are using
+https://claumovies2.herokuapp.com/movies
 
 ## Links
 Trello (list of tasks)
