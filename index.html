@@ -5,31 +5,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"> 
+    <!-- para agregar el favicon -->
+    <link rel="shortcut icon" type="image/png" href="images/title-img.png">
+
+    <!-- bootstrap 4 css -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <!-- íconos fontawesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
     <link href="CSS/styles.css"  rel="stylesheet" type="text/css">
+    
 
     
 </head>
 <body>
     <!-- Comienza navbar-->
+    
     <nav>
-        <a class='nav-bar-logo' href="index.html">
-            <img src="" alt="">
-        </a>
-        <button id>
-            <i class="fas fa-bars"></i>
-        </button>
-        <div id='menu-btn'>
-            <ul>
-                <li><a href="index.html">Home</a></li>                  
-                <li><a href="quiz.html">Take the quiz</a></li>
-                <li><a href="signup.html">Sign Up</a></li>
-                <li><a href="login.html">Log In</a></li>
-                
-            </ul>
-
-        </div>
-    </nav>
+        <ul class="menu">
+          <li class="logo"><a href="#"></a></li>
+          <li class="item"><a href="index.html">Home</a></li>
+          <li class="item"><a href="#">About</a></li>
+          <li class="item"><a href="quiz.html">Take the quiz</a></li>
+          
+          </li>
+          <li class="item button"><a href="login.html">Log In</a></li>
+          <li class="item button secondary"><a href="signup.html">Sign Up</a></li>
+          <li class="toggle"><a href="#"><i class="fas fa-bars"></i></a></li>
+        </ul>
+      </nav>
+    
     <header>
         <h1>NETFLIX and (REALLY) chill</h1>
         <p>
@@ -43,7 +49,7 @@
             <div></div>
         </section>
         <section>
-            <button onclick="window.location.href='quiz.html'">
+            <button class='btn' onclick="window.location.href='quiz.html'">
                 <p>Take the quiz!!</p>
             </button>
         </section>
@@ -54,5 +60,6 @@
  
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
       <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>  
+      <script src="JS/js.js"></script>
 </body>
 </html>

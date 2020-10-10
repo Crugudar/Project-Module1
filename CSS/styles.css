@@ -1,6 +1,165 @@
 /*CSS*/
 
-nav button{
-    height: 60px;
-    width: 60px;
-}
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }
+  body {
+    font-family: sans-serif;
+    background: #f1f1f1;
+  }
+  nav {
+    background: rgb(0, 0, 0);
+    padding: 5px 20px;
+  }
+  ul {
+    list-style-type: none;
+  }
+  a {
+    color: white;
+    text-decoration: none;
+  }
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  .menu li {
+    font-size: 16px;
+    padding: 15px 5px;
+    white-space: nowrap;
+  }
+  .logo a,
+  .toggle a {
+    font-size: 20px;
+  }
+
+  .logo{
+      background-image: url("../images/logo\ mj.jpg");
+      background-repeat:no-repeat;
+      background-size: contain;
+      width: 120px;
+      height: 90px;
+      margin-top: 2rem;
+  }
+  .button.secondary {
+    border-bottom: 1px #444 solid;
+  }
+
+  /* Mobile  */
+  .menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .toggle {
+    
+    order: 1;
+  }
+  .fas .fa-bars{
+    width: 80px;
+  }
+  .item.button {
+    order: 2;
+  }
+  .item {
+    width: 100%;
+    text-align: center;
+    order: 3;
+    display: none;
+  }
+  .item.active {
+    display: block;
+  }
+
+  header{
+    background-image: url(../images/original.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 30rem;
+  }
+
+  /* Tablet  */
+  @media all and (min-width: 600px) {
+    .menu {
+      justify-content: center;
+    }
+    .logo {
+        margin-top: 1rem;
+      flex: 1;
+    }
+    .toggle {
+      flex: 1;
+      text-align: right;
+    }
+    .item.button {
+      width: auto;
+      order: 1;
+      display: block;
+    }
+    .toggle {
+      order: 2;
+    }
+    .button.secondary {
+      border: 0;
+    }
+    .button a {
+      padding: 7.5px 15px;
+      background: teal;
+      border: 1px #006d6d solid;
+    }
+    .button.secondary a {
+      background: transparent;
+    }
+    .button a:hover {
+      text-decoration: none;
+    }
+    .button:not(.secondary) a:hover {
+      background: #006d6d;
+      border-color: #005959;
+    }
+    .button.secondary a:hover {
+      color: #ddd;
+    }
+
+    header{
+        background-image: url(../images/original.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 30rem;
+      }
+
+  }
+  /* Desktop  */
+  @media all and (min-width: 900px) {
+    .item {
+      display: block;
+      width: auto;
+    }
+    .toggle {
+      display: none;
+    }
+    .logo {
+      order: 0;
+    }
+    .item {
+      order: 1;
+    }
+    .button {
+      order: 2;
+    }
+    .menu li {
+      padding: 15px 10px;
+    }
+    .menu li.button {
+      padding-right: 0;
+    }
+    header{
+        background-image: url(../images/original.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 50rem;
+        background-attachment: fixed;
+        background-position: center;
+    }
