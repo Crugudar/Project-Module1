@@ -47,44 +47,49 @@
                 
     </header>
     <main>
-        <section id='section1'>  
-            <h1> For those moments when you <br><span>ACTUALLY</span><br> want to watch a movie.</h1>
-            <div class='steps'>
-                <div class='container-s'>
-                    <img src="images/1988.jpg" class='cute-image'alt="">
-                    <p class='steps-text'>You've prepared an amazing dinner and want to relax. <br> But which wovie is the best for this moment? <br> SO MANY OPTIONS!! </p>
-                </div>
-                <div class='container-s'>
-                    <img src="images/1974.jpg" class='cute-image'alt="">
-                    <p class='steps-text'>But you have already heard about <br><span>Netflix and (REALLY) chill </span><br>so you filter according to what yo want to see...</p>
-                </div>
-                <div class=' container-s'>
-                    <img src="images/1979.jpg" class='cute-image'alt="">
-                    <p class='steps-text'>Et voila!! <br> A cured selection of perfect movies for you to watch in your desired streaming platform <br> It was so fast, dinner is still hot!!! </p>
-                </div>
+        <section>
+            <div id="contenedor">
+                <h2>What, why, who?? </h2>
+                <h6>Every thing you need to know about NETFLIX and (REALLY) chill</h6>
+                <a href="#contenedor1">First question...</a>
             </div>
         
-            <div class='button-explore-div'>
-                <div class='button-explore-2div'>
-                    
-                    <button class='btn-explore wobble-hor-bottom' onclick="window.location.href='Formulario.html'">Explore!!</button> 
-                </div>
-               
+            <div id="contenedor1" class="efecto">
+                <h2>What?</h2>
+                <h4> As you probably have guessed "NETFLIX and (REALLY) chill" is the place to search for that perfect next movie to watch</h4>
+                <a href="#contenedor2">Second question...</a>       
+            </div>
+        
+            <div id="contenedor2" class="efecto">
+                <h4> Yeah... but why?</h4>
+                <h2>Why??</h2>
+                <h4>How many times have you let your dinner get cold browsing trough you favourite sreaming platform?<br>
+                 <span>We figured... A LOT!!</span>
+                </h4>
+                <a href="#contenedor3">siguiente</a>       
+            </div>
+        
+            <div id="contenedor3" class="efecto">
+                <h2>3º contenedor</h2>
+                <a href="#contenedor">siguiente</a>       
+            </div>
+        
+            <div id="desarrollofrontend">
+                 <a href="http://www.desarrollofrontend.com" target="blank">desarrollofrontend.com</a>
+                     
             </div>
             
+
+
+        </section>
+  
        
     </main>
     <footer>
 
     </footer>
     <!--Javascript del botón-->
-    <script>
-        const button = document.querySelector(".btn-explore");
-            button.addEventListener("mouseover", e => {
-                document.querySelector(".btn-explore").classList.toggle(".wobble-hor-bottom")
-        });      
-  
-    </script>
+    
     
  
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
