@@ -6,8 +6,12 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Netflix an (REALLY) chill - Main</title>
     
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    
     <!-- íconos fontawesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <!-- animate -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
 
     <link href="CSS/styles.css"  rel="stylesheet" type="text/css">
 
@@ -41,11 +45,29 @@
         </ul>
     
       </nav>
-    
+
+      <script>
+
+        $(document).ready(function(){
+            $(".toggle").on("click", function() {
+        if ($(".item").hasClass("active")) {
+            $(".item").removeClass("active");
+            $(this).find("a").html("<i class='fas fa-bars'></i>");
+        } else {
+            $(".item").addClass("active");
+            $(this).find("a").html("<i class='fas fa-times'></i>");
+        }
+    });
+});
+        
+       
+        </script>
+    <!-- Comienza header-->
     <header>
         <img src="images/logo transparente.png" class="header-logo" alt="">
                 
     </header>
+    <!-- Comienza main-->
     <main>
         <section id='section1'>  
             <h1> For those moments when you <br><span>ACTUALLY</span><br> want to watch a movie.</h1>
@@ -67,7 +89,7 @@
             <div class='button-explore-div'>
                 <div class='button-explore-2div'>
                     
-                    <button class='btn-explore wobble-hor-bottom' onclick="window.location.href='Formulario.html'">Explore!!</button> 
+                    <button id="buton"class='btn-explore animate__animated animate__infinit' onmouseover="animacionOver()" onmouseout="animacionOut()" onclick="window.location.href='Formulario.html'">Explore!!</button> 
                 </div>
                
             </div>
@@ -77,18 +99,7 @@
     <footer>
 
     </footer>
-    <!--Javascript del botón-->
-    <script>
-        const button = document.querySelector(".btn-explore");
-            button.addEventListener("mouseover", e => {
-                document.querySelector(".btn-explore").classList.toggle(".wobble-hor-bottom")
-        });      
-  
-    </script>
     
- 
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-      
-      <script src="mejor.js"></script>
+      <script src="pueba.js"></script>
 </body>
 </html>

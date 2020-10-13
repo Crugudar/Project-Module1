@@ -1,5 +1,16 @@
 'use strict'
 
+function animacionOver(){
+    var btnExplore=document.getElementById("buton");
+    btnExplore.classList.add('animate__swing');
+    btnExplore.classList.add('animate__infinite');
+
+}
+function animacionOut(){
+    var btnExplore=document.getElementById("buton");
+    btnExplore.classList.remove('animate__swing');
+}
+
 
 const movies = 'https://claumovies2.herokuapp.com/movies';
 
