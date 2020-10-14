@@ -63,12 +63,28 @@ function getInput(){
 
 
 let btnFil= document.getElementById('filter-btn');
-btnFil.addEventListener('click', async function (){
+btnFil.addEventListener('click', async function(){
     
     const resultados = await getInput();
-     let prueba=await filterArr(resultados);
+    
+    var pelisBuenas=await filterArr(resultados);
 
-     console.log(prueba);
+    var visibleData=pelisBuenas.map(movie=>{
+        return `<div class="shown-movie">TITLE: ${movie.movie_title} <br> IMDB link: <a href="${movie.movie_imdb_link}">${movie.movie_imdb_link}</a></div>`;
+    }).join(`<br>`);
+
+    //console.log(pelisBuenas);
+
+      
+    let cartelera=  document.querySelector('.show-movies');
+    let newDiv= document.createElement('div');
+    cartelera.appendChild(newDiv);
+
+    let newContent= visibleData;
+    
+    newDiv.innerHTML=newContent;
+
+    
     
        
 });   
@@ -91,9 +107,11 @@ async function filterArr(filtro){
 
     });
 
-   console.log(filteredMovies);
+   //console.log(filteredMovies);
    return filteredMovies;
 }
+
+
 
 
 
