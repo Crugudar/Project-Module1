@@ -1,5 +1,5 @@
 'use strict'
-
+//animación main
 function animacionOver(){
     var btnExplore=document.getElementById("buton");
     btnExplore.classList.add('animate__swing');
@@ -10,6 +10,36 @@ function animacionOut(){
     var btnExplore=document.getElementById("buton");
     btnExplore.classList.remove('animate__swing');
 }
+
+//animaciones About Us
+function animacionAUI0(){
+    var answers=document.getElementsByClassName('respuesta');
+    answers[0].classList.add('animate__slideInLeft'); 
+    answers[0].style.display = "block";
+    answers[1].style.display = "none";
+    answers[2].style.display = "none";
+    
+}
+
+function animacionAUI1(){
+    var answers=document.getElementsByClassName('respuesta');
+    answers[0].style.display = "none";
+    answers[1].style.display = "block";
+    answers[2].style.display = "none";
+    answers[1].classList.add('animate__slideInLeft');
+}
+
+function animacionAUI2(){
+    var answers=document.getElementsByClassName('respuesta');
+    answers[0].style.display = "none";
+    answers[1].style.display = "none";
+    answers[2].style.display = "block";
+    answers[2].classList.add('animate__slideInLeft');
+}
+
+
+
+
 
 
 const movies = 'https://claumovies2.herokuapp.com/movies';
@@ -99,7 +129,7 @@ async function filterArr(filtro){
     let filteredMovies= movies.filter(function(elem){
         if (filtro[0] != '' && filtro[0]!==elem.director_name) return false;
         if (filtro[1] !='' && !elem.genres.includes(filtro[1])) return false;
-        if (filtro[2] !=='' && (elem.actor_1_name !== filtro[2] && elem.actor_2_name!== filtro[2] && elem.actor_3_name !== filtro[2])) return false;
+        if (filtro[2] !=='' && (!elem.actor_1_name.includes(filtro[2]) && !elem.actor_2_name.includes(filtro[2]) && !elem.actor_3_name.includes(filtro[2]))) return false;
         if (filtro[3] !=='' && !elem.plot_keywords.includes(filtro[3])) return false;
         
         return true;

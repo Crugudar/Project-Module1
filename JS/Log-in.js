@@ -40,12 +40,12 @@ class Login {
     if (user) {
       // si el usuario inicia la sesion con exito
       // agrega la clase para cambiar el color y sobrescribir el estilo anterior
-      message.innerHTML = `hola, ${user.email}`;
+      message.innerHTML = `Welcome, ${user.email}`;
       message.classList.add("correct-message");
     }
     else {
       // si el inicio de sesión no se ha realizado correctamente
-      message.innerHTML = 'el email o/y password son incorectos';
+      message.innerHTML = 'Incorrect email/password.';
     }
 
     this.messageContainer.appendChild(message);
@@ -54,7 +54,7 @@ class Login {
   }
 
   redirect = () => {
-    setTimeout( ()=> location.assign('index.html'), 3000);
+    setTimeout( ()=> location.assign('index.html'), 4000);
   }
 
 }
