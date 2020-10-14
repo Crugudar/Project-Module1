@@ -65,24 +65,23 @@ function getInput(){
 let btnFil= document.getElementById('filter-btn');
 btnFil.addEventListener('click', async function(){
     
-    const resultados = await getInput();
+    let cartelera=  document.querySelector('.show-movies');
+    let newDiv= document.createElement('div');
+    
+    cartelera.innerHTML=('');
+    
+
+    const resultados = getInput();
     
     var pelisBuenas=await filterArr(resultados);
 
     var visibleData=pelisBuenas.map(movie=>{
-        return `<div class="shown-movie">TITLE: ${movie.movie_title} <br> IMDB link: <a href="${movie.movie_imdb_link}">${movie.movie_imdb_link}</a></div>`;
+        return `<div class="shown-movie"><h4>${movie.movie_title} </h4><div><a href="${movie.movie_imdb_link}">${movie.movie_imdb_link}</a></div></div>`;
     }).join(`<br>`);
 
-    //console.log(pelisBuenas);
-
-      
-    let cartelera=  document.querySelector('.show-movies');
-    let newDiv= document.createElement('div');
     cartelera.appendChild(newDiv);
-
-    let newContent= visibleData;
-    
-    newDiv.innerHTML=newContent;
+   
+    newDiv.innerHTML=visibleData;
 
     
     

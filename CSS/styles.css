@@ -141,15 +141,45 @@
 .form-holder{
     display: flex;
     flex-direction: column;
+    justify-items: center;
     font-size: 20px;
 }
 .form-holder > div{
     font-size: 16px;
 
 }
+
+#filter-btn{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    align-self: flex-start;
+    
+}
 .show-movies{
-    display: flex;
-    flex-wrap: wrap;
+    padding: 40px;
+    height:600px;
+    background-image: url(../images/cinemablue.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.shown-movie{
+    
+    background-color: rgb(69, 191, 212, 0.8);
+    padding: 15px;
+    border: 2px solid whitesmoke;
+    border-radius: 20px;
+    box-shadow: 5px 10px 18px black;
+
+}
+
+.shown-movie>h4{
+    font-size: 17px;
+    padding-bottom: 10px;
+}
+
+.shown-movie>div{
+    font-size: 14px;
 }
 
 /* Sign Up */
@@ -393,6 +423,20 @@
         padding: 50px ;
         border-bottom: 3px solid lightblue ;
     }
+    .show-movies{
+        height:900px;
+    }
+    .shown-movie{
+      padding: 15px;
+    }
+    
+    .shown-movie>h4{
+        font-size: 25px;
+    }
+    
+    .shown-movie>div{
+        font-size: 20px;
+    }
 
     /* Sign Up */
     .signup{
@@ -525,6 +569,40 @@
         font-size: 30px;
         
         
+    }
+
+    /* Form */
+    
+    .form-holder{
+        font-size: 30px;
+        
+    }
+    .form-holder>input{
+        height: 60px;
+        width: 360px;
+        margin-top: 30px;
+    }
+
+    #filter-btn{
+        height: 80px;
+        width: 80px;
+        border-radius: 50%;
+        align-self: center;
+    }
+
+    .show-movies{
+        height:900px;
+    }
+    .shown-movie{
+      padding: 15px;
+    }
+    
+    .shown-movie>h4{
+        font-size: 25px;
+    }
+    
+    .shown-movie>div{
+        font-size: 20px;
     }
 
 
