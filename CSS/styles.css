@@ -196,15 +196,9 @@
 /* About Us */
 
 .abt-us{
-    background: rgba(255,255,255,1);
-    background: -moz-linear-gradient(left, rgba(255,255,255,1) 0%, rgba(245,245,245,1) 0%, rgba(19,147,173,1) 100%);
-    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(255,255,255,1)), color-stop(0%, rgba(245,245,245,1)), color-stop(100%, rgba(19,147,173,1)));
-    background: -webkit-linear-gradient(left, rgba(255,255,255,1) 0%, rgba(245,245,245,1) 0%, rgba(19,147,173,1) 100%);
-    background: -o-linear-gradient(left, rgba(255,255,255,1) 0%, rgba(245,245,245,1) 0%, rgba(19,147,173,1) 100%);
-    background: -ms-linear-gradient(left, rgba(255,255,255,1) 0%, rgba(245,245,245,1) 0%, rgba(19,147,173,1) 100%);
-    background: linear-gradient(to right, rgba(255,255,255,1) 0%, rgba(245,245,245,1) 0%, rgba(19,147,173,1) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#1393ad', GradientType=1 );
-
+    background-image: url(../images/denise-jans-9lTUAlNB87M-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -227,7 +221,7 @@
 
 #abt-us-tit>h6{
     
-    color: rgb(0, 0, 0);
+    color: rgb(233, 229, 229);
     font-size: 20px;
 
 }
