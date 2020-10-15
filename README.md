@@ -23,7 +23,7 @@ MVP (DOM - CANVAS)
 ## Backlog
 - Show movie poster
 - Showing only 20 movies or less randomly choosen each time
--Test from the original idea
+- Test from the original idea
 
 ## Wireframes
 List of pages, and/or link to your sketchs
