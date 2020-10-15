@@ -77,19 +77,6 @@ function getInput(){
 
 
     return r;
-    
-    //.filter(item=>item);
-
-
-    
-    // return {
-    //     director_name:filtro1,
-    //     genres:filtro2,
-    //     actor_1_name:filtro3,
-    //     actor_2_name:filtro3,
-    //     actor_3_name:filtro3,
-    //     plot_keywords:filtro4
-    // }; 
 }
 
  
@@ -109,14 +96,23 @@ btnFil.addEventListener('click', async function(){
     const resultados = getInput();
     
     var pelisBuenas=await filterArr(resultados);
-
-    var visibleData=pelisBuenas.map(movie=>{
+    
+    if(pelisBuenas.length>0){
+       var visibleData=pelisBuenas.map(movie=>{
         return `<div class="shown-movie"><h4>${movie.movie_title} </h4><div><a href="${movie.movie_imdb_link}">${movie.movie_imdb_link}</a></div></div>`;
     }).join(`<br>`);
 
     cartelera.appendChild(newDiv);
    
-    newDiv.innerHTML=visibleData;
+    newDiv.innerHTML=visibleData; 
+    }else{
+        cartelera.appendChild(newDiv);
+   
+        newDiv.innerHTML=`<div class="sorry-msg">Sorry what you want to see is yet to be filmed. <br><br>
+        Tell us your idea at netflixand@chillin.com and we will send it directly to HOLLYWOOD ;)</div>`;    
+    }
+
+    
 
     
     
@@ -128,8 +124,7 @@ btnFil.addEventListener('click', async function(){
 async function filterArr(filtro){
     let movies= await getMovies();
         
-//  if(filtro[0]==''){console.log('filtro0 es una string vacía');}else{console.log('filtro0 NO es una string vacía');}
-//  if(filtro[0]==null){console.log('filtro0 es null');}else{console.log('filtro0 NO es null');}
+
     
     let filteredMovies= movies.filter(function(elem){
         if (filtro[0] != '' && filtro[0]!==elem.director_name) return false;
@@ -144,23 +139,4 @@ async function filterArr(filtro){
    //console.log(filteredMovies);
    return filteredMovies;
 }
-
-
-
-
-
-//mostrar elementos filtrados en el HTML
-
-// async function showMovies(){
-//     let newContent= await filterArr();
-    
-//     let cartelera= await document.querySelector('.show-movies');
-//     let newDiv=await document.createElement('div');
-    
-//     await cartelera.appendChild(newDiv);
-//     await newDiv.innerHTML(newContent);
-// }
-
-// console.log(showMovies());
-
 
