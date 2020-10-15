@@ -36,7 +36,12 @@ function animacionAUI2(){
     answers[2].style.display = "block";
     answers[2].classList.add('animate__slideInLeft');
 }
-
+function animacionDisapear(){
+    var answers=document.getElementsByClassName('respuesta');
+    answers[0].style.display = "none";
+    answers[1].style.display = "none";
+    answers[2].style.display = "none";
+} 
 
 
 

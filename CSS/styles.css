@@ -346,7 +346,7 @@
 
 .login-form>input{
     width: 300px;
-    margin: 20px;
+    margin: 45px;
     height: 50px;
     background-color:rgba(213, 231, 236, 0.7);
     font-size: 16px;
@@ -355,7 +355,7 @@
 
 .login-form>button{
     width: 300px;
-    margin: 20px;
+    margin: 45px;
     height: 50px;
     font-size: 20px;
     background-color:rgb(51, 130, 144) ;
@@ -758,6 +758,9 @@
         width: 360px;
         margin-top: 30px;
     }
+    .form-holder>input::placeholder{
+        font-size: 20px;
+    }
 
     #filter-btn{
         height: 80px;
@@ -848,6 +851,9 @@
         width: 800px;
         height: 90px;
         
+    }
+    .signup-form>input::placeholder{
+        font-size: 25px;
     }
 
     .signup-form>button{
