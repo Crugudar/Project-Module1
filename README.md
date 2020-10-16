@@ -26,7 +26,7 @@ MVP (DOM - CANVAS)
 - Test from the original idea
 
 ## Wireframes
-List of pages, and/or link to your sketchs
+Look Trello
 
 ## Data structure
 - **root/**
@@ -50,15 +50,13 @@ List of pages, and/or link to your sketchs
 
 
 ## APIs
-The API(s) you are using
 https://claumovies2.herokuapp.com/movies
 
 ## Links
-Trello (list of tasks)
 https://trello.com/b/6TKGW2Hn/proyecto-1
 
-Github
+## Github
 https://github.com/Crugudar/Project-Module1
 
-Slides
+## Slides
 https://docs.google.com/presentation/d/1y_OLfKcyFJvrGDOPwSpqBR82xXdCp3lPRXCZVvZ63yw/edit?usp=sharing
