@@ -57,8 +57,8 @@ https://claumovies2.herokuapp.com/movies
 Trello (list of tasks)
 https://trello.com/b/6TKGW2Hn/proyecto-1
 
-Github
+## Github
 https://github.com/Crugudar/Project-Module1
 
-Slides
+## Slides
 https://docs.google.com/presentation/d/1y_OLfKcyFJvrGDOPwSpqBR82xXdCp3lPRXCZVvZ63yw/edit?usp=sharing
